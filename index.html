@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Full screen Menu</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <img src="images/menu.png" id="menuIcon" alt="">
+        <div class="container" ></div>
+        <div class="menu-box"id="menuBox">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">aboutus</a></li>
+                <li><a href="#">by age</a></li>
+                <li><a href="#">by region</a></li>
+            </ul>
+        </div>
+        <script>
+            let menuBox= document.getElementById("menuBox");
+            let menuIcon= document.getElementById("menuIcon");
+            menuIcon.onclick=function(){
+            menuBox.classList.toggle("open-menu");
+            };
+        </script>
+    </body>
+</html>
